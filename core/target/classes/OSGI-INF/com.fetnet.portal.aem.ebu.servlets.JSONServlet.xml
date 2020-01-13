@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="com.fetnet.portal.aem.ebu.servlets.JSONServlet">
+  <implementation class="com.fetnet.portal.aem.ebu.servlets.JSONServlet"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <property name="sling.servlet.paths" type="String" value="/bin/readjsonEbu"/>
+  <property name="service.description" type="String" value="JSON Servlet to read the data from the external webservice"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+</component>

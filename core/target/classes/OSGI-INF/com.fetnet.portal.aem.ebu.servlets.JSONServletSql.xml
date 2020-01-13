@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.fetnet.portal.aem.ebu.servlets.JSONServletSql">
+  <implementation class="com.fetnet.portal.aem.ebu.servlets.JSONServletSql"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="queryStatManagerMBean" interface="org.apache.jackrabbit.api.jmx.QueryStatManagerMBean" field="queryStatManagerMBean"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/readjsonSqlEbu"/>
+  <property name="service.description" type="String" value="JSON Servlet to read the data from the external webservice"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+</scr:component>
